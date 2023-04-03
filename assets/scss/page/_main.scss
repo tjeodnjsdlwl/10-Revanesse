@@ -1,0 +1,822 @@
+.inner{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.cont-wrap{
+    width: 100%;
+    height: 100vh;
+}
+
+
+section{
+    padding: 70px 0;
+}
+
+
+h2{
+    line-height: 1em;
+}
+
+
+.headline{
+    font-family: ivypresto-display, serif;
+    text-align: center;
+    z-index: 1;
+
+    .text{
+        font-size: 150px;
+        text-align: center;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        gap: 50px;
+
+        @include desktop{
+            font-size: 80px;
+            gap: 30px;
+        }
+
+        @include tablet{
+            font-size: 60px;
+        }
+
+        @include mobile{
+            font-size: 42px;
+            flex-wrap: wrap;
+        }
+
+        span{
+            padding: 20px 0;
+
+            @include desktop{
+                padding: 15px 80px;
+            }
+
+            @include tablet{
+                padding: 7px 60px;
+            }
+
+            @include mobile{
+                line-height: 55px;
+                padding: 0 40px;
+            }
+        }
+        &.lower{
+            font-style: italic;
+        }
+    }
+}
+
+
+.text{
+    font-family: ivypresto-display, serif;
+    font-weight: 100;
+    line-height: 1em;
+    word-wrap: break-word;
+
+    @include mobile{
+        line-height: 20px;
+    }
+}
+
+
+.sc-slogan .md-headline{
+    .text{
+        display: block;
+        font-size: 90px;
+        font-weight: 100;
+        line-height: 1em;
+        overflow: hidden;
+
+        @include tablet{
+            font-size: 70px;
+        }
+
+        @include mobile{
+            font-size: 36px;
+            line-height: 0.4em;
+        }
+    
+        span{
+            display: block;
+            padding: 30px 0;
+
+            @include tablet{
+                padding: 20px 0;
+            }
+        }
+    
+        &.lower{
+            font-style: italic;
+        }
+    }
+}
+
+
+.lr-headline{
+    .text{
+        display: block;
+        margin-top: 100px;
+        margin-left: 5%;
+        font-size: 225px;
+        line-height: 165px;
+        text-align: left;
+        line-height: 1em;
+
+        @include desktop{
+            font-size: 170px;
+        }
+
+        @include tablet{
+            font-size: 150px;
+        }
+
+        @include mobile{
+            font-size: 80px;
+        }
+    
+        span{
+            display: block;
+            padding: 30px 0;
+
+            @include mobile{
+                padding: 15px 0;
+            }
+        }
+    
+        &.lower{
+            margin: 0 0 90px 0;
+            text-align: center;
+            font-style: italic;
+            padding: 30px 0;
+            margin-top: -50px;
+
+            @include mobile{
+                margin: 0 0 50px 0;
+                padding: 0;
+            }
+        }
+    }
+} 
+
+
+.text-area{
+    &.sm{
+        width: 50%;
+
+        @include mobile{
+            width: 95%;
+        }
+
+        .title{
+            font-family: ivypresto-display, serif;
+            font-weight: 100;
+            font-size: 34px;
+            padding-bottom: 15px;
+            display: block;
+
+            @include tablet{
+                font-size: 26px;
+            }
+
+            @include mobile{
+                font-size: 22px;
+            }
+        }
+
+        .text{
+            font-family: futura-pt, Helvetica, Arial, Lucida, sans-serif;
+            line-height: 1.5em;
+
+            @include tablet{
+                font-size: 16px;
+            }
+
+            @include mobile{
+                font-size: 14px;
+                line-height: 1.2em;
+            }
+        }
+    }
+}
+
+
+.group-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 40px 0 40px;
+
+    @include desktop{
+        padding: 90px 40px 0 40px;
+    }
+
+    @include tablet{
+        align-items: end;
+        padding: 50px 40px 0 40px;
+    }
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .btn-area{
+        position: relative;
+        height: 100%;
+        padding-top: 9px;
+        padding-right: 10em;
+        padding-bottom: 9px;
+        padding-left: 36px;
+        border: 2px solid;
+        border-radius: 50px;
+        border-width: 0.5px;
+
+        @include tablet{
+            padding-right: 5em;    
+            padding-top: 6px;
+        }
+
+        @include mobile{
+            padding-top: 3px;
+            margin-top: 30px;
+        }
+
+        .text{
+            font-family: futura-pt, Helvetica, Arial, Lucida, sans-serif;
+            width: 100%;
+            
+            @include tablet{
+                font-size: 14px;   
+            }
+
+            &::after{
+                content: '$';
+                position: absolute;
+                right: 1.5em;
+                font-family: ETmodules;
+                font-size: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+
+
+
+/* @@ 메인 */
+.sc-main-visual{
+    position: relative;
+    padding: 0;
+    height: 100vh;
+
+    .bg{
+        position: absolute;
+        top: 0; right: 0;
+        width: 100%;
+        height: 110%;
+        background: url(../img/img-main.jpg) no-repeat;
+        background-size: cover;
+        background-position: right 0;
+
+        @include desktop{
+            background-position: center 0;
+        }
+    }
+
+    .group-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height: 100vh;
+        padding: 0;
+
+        @include mobile{
+            align-items: center;
+        }
+    }
+
+    .text{
+        padding: 0 60px;
+        font-size: 120px;
+
+        @include tablet{
+            font-size: 100px;
+        }
+
+        @include mobile{
+            padding: 0 50px;
+            font-size: 90px;
+
+        }
+        
+        span{
+            padding: 20px 0;
+
+            @include mobile{
+                padding: 40px 0;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+
+/* @@ 4줄 슬로건 */
+.sc-slogan{
+    &.xs{
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        background: #000;
+    }
+}
+
+
+/* 풀 슬라이드 페이지 */
+.sc-page-slide{
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 10;
+    padding: 0;
+
+    @include desktop{
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+    @include tablet{
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+    .group-page{
+        position: absolute;
+        width: 100%;
+        top: 0;left: 0;
+        height: 100vh;
+        border-radius: 50% 50% 0 0;
+        overflow: hidden;
+        animation-timing-function: linear;
+        animation-duration: .2s;
+
+        @include desktop{
+            position: static;
+            width: 100%;
+            height: 100vh;
+        }
+
+        @include tablet{
+            position: static;
+            width: 100%;
+            height: 100vh;
+        }
+
+        &.page1{z-index: 1;}
+        &.page2{z-index: 2;}
+        &.page3{z-index: 3;}
+        &.page4{z-index: 4;}
+
+        .cont-wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+            &.img{
+                background: url(../img/img-2p-1.png) no-repeat center / cover;
+            }
+
+            .page-video{
+                object-fit: cover;
+                height: 100vh;
+            }
+
+            .text-area{
+                &.left{
+                    position: absolute;
+                    left: 6%;
+                    bottom: 10%;
+                    z-index: 100;
+                }
+
+                &.right{
+                    position: absolute;
+                    right: 6%;
+                    bottom: 10%;
+                    z-index: 100;
+                }
+            }
+
+            .sidetext{
+                font-family: ivypresto-display, serif;
+                font-weight: 100;
+                font-size: 37px;
+
+                @include tablet{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* 슬라이드 */
+.sc-arch-slide{
+
+    @include tablet{
+        position: relative;
+    }
+    
+    .slide-wrap{
+        overflow: hidden;
+        padding: 0 5%;
+
+        @include tablet{
+            padding: 0;
+        }
+
+        .arch-slide {
+            padding-top: 30px;
+            padding-bottom: 75px;
+
+            @include mobile{
+                padding-top: 50px;
+            }
+
+            .swiper-slide{
+                padding: 3% 0;
+
+                img{
+                    border-radius: 20px;
+                    transition: all 1.2s ease 0s;
+                }
+
+                .text-area{
+                    font-size: 34px;
+                    letter-spacing: 0.02em;
+                    line-height: 38px;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 70px;
+
+                    @include desktop{
+                        font-size: 22px;
+                        line-height: 30px;
+                        bottom: 55px;
+                    }
+
+                    @include tablet{
+                        font-size: 18px;
+                        line-height: 24px;
+                        bottom: 40px;
+                    }
+                }
+            }
+
+            .swiper-slide-active{
+                z-index: 100;
+
+                img{
+                    transform: scale(1.2);
+                    border-radius: 600px;
+                    box-shadow: 0px 100px 100px rgb(0 0 0);
+                }
+
+                .text-area{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    height: 100%;
+                    font-size: 60px;
+                    line-height: 66px;
+                    text-align: center;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    padding: 0 24px;
+
+                    @include mobile{
+                        font-size: 26px;
+                        line-height: 50px;
+                        padding: 0 10px;
+                    }
+
+                    .text{
+                        width: 100%;
+                        word-break: break-word;
+
+                        @include desktop{
+                            font-size: 42px;
+                        }
+
+                        @include tablet{
+                            font-size: 40px;
+                            line-height: 50px;
+                        }
+    
+                        @include mobile{
+                            font-size: 38px;
+                            padding: 0;
+                        }
+
+                        .lower{
+                            display: inline;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+
+            .swiper-pagination{
+                text-align: center;
+                color: #fff;
+                width: 171px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1000;
+
+                .swiper-pagination-bullet{
+                    width: 4px;
+                    height: 4px;
+                    background-color: #383935;
+                    border-radius: 50px;
+                    margin: 0px 6px;
+                    opacity: 10;
+                }
+    
+                .swiper-pagination-bullet-active{
+                    width: 40px;
+                    height: 1px;
+                    background-color: #ffffff;
+                    vertical-align: middle;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}
+
+
+/* 2줄 라지 슬로건 */
+.sc-slogan{
+    &.lr{
+        .group-text{
+            display: flex;
+            justify-content: end;
+            margin-right: 200px;
+    
+            .text{
+                font-family: futura-pt, Helvetica, Arial, Lucida, sans-serif;
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+
+
+/* 자동재생 슬라이드 2영역 */
+.sc-auto-slide{
+    .swiper{
+        padding: 0 40px;
+
+        .swiper-slide{
+            margin-top: 70px;
+            width: 750px;
+
+            @include tablet{
+                width: 350px;
+            }
+
+            @include mobile{
+                width: 100%;
+            }
+
+            &-active{}
+
+            img{
+                height: 100%;
+                background-size: cover;
+                border-radius: 10px;
+                text-align: center;
+                border-radius: 10px;
+            }
+        }
+    }    
+}
+
+
+.sc-slogan{
+    &.md{
+        padding: 150px 0;
+
+        @include tablet{
+            padding: 80px 0;
+        }
+
+        @include mobile{
+            padding: 40px 0;
+        }
+
+        .group-slogan{
+            .headline{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                @include tablet{
+                    gap: 30px;
+                }
+            
+                .text{
+                    width: 100%;
+                    display: inline-block;
+                    text-align: right;
+                    font-style: normal;
+                    padding: 0 40px;
+
+                    @include mobile{
+                        text-align: center;
+                    }
+
+                    &.left{
+                        text-align: left;
+                        margin-left: -2%;
+                    }
+                    &.in{
+                        text-align: left;
+                        margin-left: 0;
+
+                        @include tablet{
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .lower{
+                    display: inline-block;
+                    font-style: italic;
+                    
+                    @include tablet{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* FAQs */
+.sc-FAQs{
+    font-family: ivypresto-display, serif;
+    font-weight: 100;
+
+    @include tablet{
+        padding: 20px 0;
+    }
+
+    .headline{
+        font-size: 60px;
+        text-align: left;
+        margin-bottom: 70px;
+        padding: 0 40px;
+
+        @include desktop{
+            padding: 0 40px;
+            font-size: 50px;
+        }
+
+        @include tablet{
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        
+    }
+
+    .group-question{
+        border-top: 1px solid #d9d9d9;
+        border-width: 1px 0px; 
+        padding: 60px 40px;
+
+        @include desktop{
+            padding: 45px 0;
+        }
+
+        @include tablet{
+            padding: 30px 0;
+        }
+
+        @include mobile{
+            padding: 20px 0;
+        }
+
+        .title-area{
+            position: relative;
+
+            @include desktop{
+                padding: 0 40px;
+            }
+
+            .title{
+                font-size: 34px;
+
+                @include desktop{
+                    font-size: 28px;
+                }
+
+                @include tablet{
+                    font-size: 24px;
+                }
+
+                @include mobile{
+                    width: 90%;
+                    font-size: 16px;
+                }
+
+                &.on{
+                    &::after{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &::after{
+                background: url(../img/ic-open.png) no-repeat center / cover;
+                content: '';
+                width: 32px;
+                height: 16px;
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include desktop{
+                    margin-right: 40px;
+                }
+
+                @include tablet{
+                    width: 26px;
+                    height: 10px;
+                }
+
+                @include mobile{
+                    width: 20px;
+                    height: 6px;
+                }
+            }
+        }
+
+        .cont-area{
+            display: none;
+            padding-top: 25px;
+            animation-timing-function: linear;
+            animation-duration: .2s;
+
+            @include desktop{
+                padding: 25px 40px 0 40px;
+            }
+
+            &.on{
+                display: block;
+            }
+        }
+
+        .desc{
+            font-family: futura-pt, Helvetica, Arial, Lucida, sans-serif;
+
+            @include tablet{
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+            @include mobile{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+
+

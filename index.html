@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revanesse</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+	
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!-- icon font -->
+    <script src="https://kit.fontawesome.com/c1911f5fd4.js" crossorigin="anonymous"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- @@ 헤더 -->
+        <header class="header">
+            <div class="header-wrap inner">
+                <h1 class="logo"><a href=""><img src="./assets/img/logo.png" alt="Revanesse"n></a></h1>
+                <nav class="gnb">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="">Before & After</a></li>
+                        <li class="nav-item"><a href="">Products</a></li>
+                        <li class="nav-item"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-box">
+                    <a href="" class="btn">
+                        <span>Find a Provider</span>
+                    </a>
+                </div>
+
+                <button class="btn-menu">
+                    <span class="blind">메뉴</span>
+                    <svg version="1.1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <g class="ic menu" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"><path id="hamburger-top" d="m2.0381 14.159h35.924v2.0982h-35.924z"></path><path id="hamburger-bottom" d="m14.013 23.742h23.949v2.0982h-23.949z"></path></g>
+                        <!-- <g class="ic close" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"><path id="x-left" d="m7.2499 5.7266 26.983 26.983-1.4837 1.4836-26.983-26.983z"></path><path id="x-right" d="m34.234 7.2902-26.983 26.983-1.4837-1.4836 26.983-26.983z"></path></g> -->
+                    </svg>
+                </button>
+
+                <button class="btn-close on">
+                    <span class="blind">닫기</span>
+                    <svg version="1.1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <g class="ic close" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"><path id="x-left" d="m7.2499 5.7266 26.983 26.983-1.4837 1.4836-26.983-26.983z"></path><path id="x-right" d="m34.234 7.2902-26.983 26.983-1.4837-1.4836 26.983-26.983z"></path></g>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <aside class="aside-menu">
+            <div class="menu-wrapper">
+                <ul class="cate-list">
+                    <li class="cate-item"><a href="">BEFORE & AFTER</a></li>
+                    <li class="cate-item"><a href="">PRODUCTS</a></li>
+                    <li class="cate-item"><a href="">CONTACT</a></li>
+                </ul>
+                <div class="btn-box">
+                    <a href="" class="btn">
+                        <span>Find a Provider</span>
+                    </a>
+                </div>
+                <div class="link-icon">
+                    <a href="" class="insta"><span class="blind">인스타그램</span></a>
+                    <a href="" class="facebook"><span class="blind">페이스북</span></a>
+                    <a href="" class="linkedin"><span class="blind">링크드인</span></a>
+                    <a href="" class="twitter"><span class="blind">트위터</span></a>
+                </div>
+            </div>
+        </aside>
+
+
+        <!-- 메인 페이지 -->
+        <section class="sc-main-visual">
+
+            <div class="cont-wrap">
+                <div class="bg"></div>
+                <div class="group-text inner">
+                    <h2 class="headline">
+                        <div class="text"><span>YOUR</span><span>LOOK</span></div>
+                        <div class="text lower"><span>your</span><span>way</span></div>
+                    </h2>
+                </div>
+            </div>
+
+             <!-- 2nd 슬로건 페이지 -->
+            <section class="sc-slogan xs">
+                <h3 class="md-headline">
+                    <span class="text"><span>DERMAL FILLER</span></span>
+                    <span class="text"><span>DESIGNED FOR</span></span>
+                    <span class="text lower"><span>bold, expressive beauty</span></span>
+                    <span class="text"><span>ON YOUR TERMS.</span></span>
+                </h3>
+            </section>
+
+            <!-- 풀 스크롤 슬라이드 -->
+            <section class="sc-page-slide">
+                <div class="group-page page1">
+                    <div class="cont-wrap img">
+                        <div class="text-area">
+                            <h2 class="headline">
+                                <span class="text">YOUR BEAUTY'S</span>
+                                <span class="text lower">evolution</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-page page2">
+                    <div class="cont-wrap">
+                        <video autoplay muted loop class="page-video">
+                            <source src="./assets/mov/mov-2p-2.mp4" type="video/mp4">   
+                        </video>
+                        <div class="text-area left">
+                            <span class="sidetext">Minor Enhancement</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-page page3">
+                    <div class="cont-wrap">
+                        <video autoplay muted loop class="page-video">
+                            <source src="./assets/mov/mov-2p-3.mp4" type="video/mp4">   
+                        </video>
+                        <div class="text-area right">
+                            <span class="sidetext">Multi-Area Treatment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-page page4">
+                    <div class="cont-wrap">
+                        <video autoplay muted loop class="page-video">
+                            <source src="./assets/mov/mov-2p-4.mp4" type="video/mp4">   
+                        </video>
+                        <div class="text-area left">
+                            <span class="sidetext">Full Rejuvenation</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <!-- Find a look 사람 스와이퍼 -->
+        <section class="sc-arch-slide">
+            <h2 class="lr-headline inner">
+                <span class="text" data-scroll><span>Find a</span></span>
+                <span class="text lower" data-scroll><span>look</span></span>
+            </h2>
+            <div class="slide-wrap">
+                <div class="swiper arch-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <img src="./assets/img/slide-img1.jpg" alt>
+                            </div>
+                            <div class="text-area">
+                                <span class="text">
+                                    “It’s so nice that you can just
+                                    <em class="lower">age gracefully,</em>
+                                    just not as accelerated.”
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <img src="./assets/img/slide-img2.jpg" alt>
+                            </div>
+                            <div class="text-area">
+                                <span class="text">
+                                    “It’s so nice that you can just
+                                    <em class="lower">age gracefully,</em>
+                                    just not as accelerated.”
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <img src="./assets/img/slide-img3.jpg" alt>
+                            </div>
+                            <div class="text-area">
+                                <span class="text">
+                                    “It’s so nice that you can just
+                                    <em class="lower">age gracefully,</em>
+                                    just not as accelerated.”
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <img src="./assets/img/slide-img4.jpg" alt>
+                            </div>
+                            <div class="text-area">
+                                <span class="text">
+                                    “It’s so nice that you can just
+                                    <em class="lower">age gracefully,</em>
+                                    just not as accelerated.”
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <img src="./assets/img/slide-img1.jpg" alt>
+                            </div>
+                            <div class="text-area">
+                                <span class="text">
+                                    “It’s so nice that you can just
+                                    <em class="lower">age gracefully,</em>
+                                    just not as accelerated.”
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <img src="./assets/img/slide-img2.jpg" alt>
+                            </div>
+                            <div class="text-area">
+                                <span class="text">
+                                    “It’s so nice that you can just
+                                    <em class="lower">age gracefully,</em>
+                                    just not as accelerated.”
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <img src="./assets/img/slide-img3.jpg" alt>
+                            </div>
+                            <div class="text-area">
+                                <span class="text">
+                                    “It’s so nice that you can just
+                                    <em class="lower">age gracefully,</em>
+                                    just not as accelerated.”
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <img src="./assets/img/slide-img4.jpg" alt>
+                            </div>
+                            <div class="text-area">
+                                <span class="text">
+                                    “It’s so nice that you can just
+                                    <em class="lower">age gracefully,</em>
+                                    just not as accelerated.”
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 페이지네이션 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- that's yours 슬로건 페이지 -->
+        <section class="sc-slogan lr inner">
+            <div class="group-slogan">
+                <h2 class="lr-headline">
+                    <span class="text" data-scroll><span>that's</span></span>
+                    <em class="text lower" data-scroll><span>yours.</span></em>
+                </h2>
+            </div>
+            <div class="group-text">
+                <p class="text">
+                    The Revanesse® line is designed to meet your unique goals. Premium results with minimal<br>
+                    pain and swelling and a natural look and feel. That’s the Revanesse® difference.
+                </p>
+            </div>
+        </section>
+
+        <!-- 사람 오토 슬라이드 페이지 -->
+        <section class="sc-auto-slide people">
+            <h2 class="blind">사람 이미지 슬라이드</h2>
+            <div class="group-slide">
+                <div class="swiper people-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/aslide-img1.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/aslide-img2.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/aslide-img3.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/aslide-img1.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/aslide-img2.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/aslide-img3.jpg" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-text inner">
+                <div class="text-area sm">
+                    <strong class="title">Real People. Real Results.</strong>
+                    <p class="text">Revanesse® is more than a filler—it’s a feeling. Hear from real Revanesse®
+                        patients and discover the transformation: inside and out.</p>
+                </div>
+                <a href="" class="btn-area">
+                    <span class="text">See Results</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ON A ~~ 3줄 슬로건 페이지 -->
+        <section class="sc-slogan md inner">
+            <div class="group-slogan">
+                <h2 class="headline">
+                    <span class="text" data-scroll><span>ON A MISSION TO</span></span>
+                    <span class="text left" data-scroll><span>HELP THE WORLD</span></span>
+                    <span class="text lower" data-scroll><span><em>feel</em> MORE BEAUTIFUL.</span></span>
+                </h2>
+            </div>
+            <div class="group-text">
+                <div class="text-area sm">
+                    <p class="text">Founded in 2002, Revanesse® is a line of state-of-the-art dermal fillers
+                        designed to be as unique as you are. Manufactured in Canada, with over
+                        5.5 million syringes sold worldwide, Revanesse® is reshaping the
+                        aesthetic experience in over 80 countries around the globe.</p>
+                </div>
+                <a href="" class="btn-area">
+                    <span class="text">Join the Movement</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 제품 오토 슬라이드 페이지 -->
+        <section class="sc-auto-slide item">
+            <h2 class="blind">제품 이미지 슬라이드</h2>
+            <div class="group-slide">
+                <div class="swiper item-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/islide-img1.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/islide-img2.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/islide-img3.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/islide-img1.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/islide-img2.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/islide-img3.jpg" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-text inner">
+                <div class="text-area sm">
+                    <strong class="title">The Revanesse® Line</strong>
+                    <p class="text">The Revanesse® line of hyaluronic acid (HA) dermal fillers can help to
+                        rejuvenate, smooth, lift, contour, and enhance your features. From the
+                        lightest touch to the boldest lip, there’s Revanesse®.</p>
+                </div>
+                <a href="" class="btn-area">
+                    <span class="text">Learn More</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- OWN YOUR~~ 2줄 슬로건 페이지 -->
+        <section class="sc-slogan md inner">
+            <div class="group-slogan">
+                <h2 class="headline">
+                    <span class="text left in" data-scroll><span>OWN YOUR LOOK</span></span>
+                    <span class="text lower" data-scroll><span>unapologetically.</span></span>
+                </h2>
+            </div>
+            <div class="group-text">
+                <div class="text-area sm">
+                    <p class="text">Are you ready to take control of your beauty goals? Whatever you
+                        choose: your beautiful unique, expressive face is safe in our hands.</p>
+                </div>
+                <a href="" class="btn-area">
+                    <span class="text">Find a Provider</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section class="sc-FAQs">
+            <h2 class="headline inner">FAQs</h2>
+
+            <div class="group-question">
+                <div class="title-area inner">
+                    <p class="title">What is a hyaluronic acid dermal filler?</p>
+                </div>
+                <div class="cont-area inner">
+                    <p class="desc">
+                        Hyaluronic acid (HA) is a naturally occurring sugar in the body that helps facilitate the skin’s ability to stay hydrated. As we age, the amount of hyaluronic acid made by the body lessens, which affects the volume and appearance of your skin. Hyaluronic acid fillers are body-safe clear gels that, when injected beneath the skin, can help to fill in facial wrinkles, restore volume loss, and refine your facial features.
+                    </p>
+                </div>
+            </div>
+            <div class="group-question">
+                <div class="title-area inner">
+                    <p class="title">What is Revanesse®?</p>
+                </div>
+                <div class="cont-area inner">
+                    <p class="desc">
+                        Revanesse® is a line of hyaluronic acid (HA) dermal fillers made with state-of-the-art production methods, optimal ingredients, and rigorous quality testing to provide remarkable results. Revanesse® fillers add volume for a smoother, more youthful appearance while helping to shape and sculpt your features to your ideal of beauty. Revanesse® is manufactured in Richmond Hill, Ontario, by Prollenium Medical Technologies Inc., a Canadian company that has been developing cutting-edge products in the medical devices industry, with a focus on aesthetics, since 2002. Prollenium is the only manufacturer of dermal fillers in North America.
+                    </p>
+                </div>
+            </div>
+            <div class="group-question">
+                <div class="title-area inner">
+                    <p class="title">What makes Revanesse® unique?</p>
+                </div>
+                <div class="cont-area inner">
+                    <p class="desc">
+                        Not all fillers are created equal. To maximise quality and safety, our proprietary formula is developed and manufactured in small batches with rigorous quality control in 2 state-of-the-art facilities in Ontario, Canada. Revanesse® is optimized for versatility to produce the results you want—your look, your way. Revanesse® dermal fillers were proven to cause minimal pain, swelling, and downtime in clinical trials.1 The natural look and feel of our results have made Revanesse® the name on everyone’s lips. 
+                    </p>
+                </div>
+            </div>
+            <div class="group-question">
+                <div class="title-area inner">
+                    <p class="title">Is a Revanesse® treatment safe?</p>
+                </div>
+                <div class="cont-area inner">
+                    <p class="desc">
+                        The Revanesse® formula is well-studied and safe, with over 4 million syringes sold worldwide. Over 300 patients of multiple skin types were treated with Revanesse® Ultra™+ in three clinical trials, with no serious adverse events reported. In one of our clinical trials, 50% more patients treated with a comparable product experienced swelling than patients who were treated with Revanesse® Ultra™+. Additionally, 74% more patients reported injection site pain after their treatment with the comparable product than with Revanesse® Ultra™+.
+                    </p>
+                    <br>
+                    <p class="desc">
+                        Consult your health care provider to find out if Revanesse® is the right fit for you.
+                    </p>
+                </div>
+            </div>
+            <div class="group-question">
+                <div class="title-area inner">
+                    <p class="title">How long until I see results, and how long will they last? </p>
+                </div>
+                <div class="cont-area inner">
+                    <p class="desc">
+                        You will see results instantly. Once injected, the Revanesse® line of fillers provides immediate volume; optimal results are typically seen 2 weeks after treatment. Longevity can depend on the area treated, the type of filler, and some personal characteristics, including your metabolism and activity level. The Revanesse® line of dermal fillers is optimized for durability, lasting on average between 6-12 months. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- @@ 푸터 -->
+        <footer class="footer">
+            <div class="footer-wrap inner">
+                <div class="group-company">
+                    <a href=""> <h2 class="logo"><span class="blind">Revanesse</span></h2> </a>
+                    <div class="sns-area">
+                        <a href="" class="sns insta"><span class="blind">인스타그램</span></a>
+                        <a href="" class="sns facebook"><span class="blind">페이스북</span></a>
+                        <a href="" class="sns linkedin"><span class="blind">링크드인</span></a>
+                        <a href="" class="sns twitter"><span class="blind">트위터</span></a>
+                    </div>
+                </div>
+                <div class="group-gnb">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="">HOME</a></li>
+                        <li class="nav-item"><a href="">BEFORE & AFTER</a></li>
+                        <li class="nav-item"><a href="">PRODUCTS</a></li>
+                    </ul>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="">CONTACT</a></li>
+                        <li class="nav-item"><a href="">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+                <div class="group-provider">
+                    <p class="text">Thanks for finding us.<br>
+                        Ready to find <em class="lower">yourself</em>?
+                    </p>
+                    <a href="" class="btn-area">
+                        <span class="text">Find a Provider</span>
+                    </a>
+                </div>
+            </div>
+            <p class="copy inner">©2022 Prollenium Medical Technologies, Inc. PN15002 Rev00</p>
+
+            <div class="fixed-btns">
+                <button class="btn-top" id="topBtn">
+                    <span class="blind">상단으로 이동</span>
+                </button>
+                <button class="btn-acsb" id="acsbBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100 131.3" enable-background="new 0 0 100 131.3" xml:space="preserve"><path d="M71.6,131.3c1,0,2.1-0.3,3.1-0.8c3.9-1.8,5.5-6.2,3.6-10.1c0,0-14.3-32.7-16.9-44.7c-1-4.2-1.6-15.3-1.8-20.5c0-1.8,1-3.4,2.6-3.9l32-9.6c3.9-1,6.2-5.5,5.2-9.4c-1-3.9-5.5-6.2-9.4-5.2c0,0-29.6,9.6-40.3,9.6c-10.4,0-39.8-9.4-39.8-9.4c-3.9-1-8.3,0.8-9.6,4.7c-1.3,4.2,1,8.6,5.2,9.6l32,9.6c1.6,0.5,2.9,2.1,2.6,3.9c-0.3,5.2-0.8,16.4-1.8,20.5c-2.6,12-16.9,44.7-16.9,44.7c-1.8,3.9,0,8.3,3.6,10.1c1,0.5,2.1,0.8,3.1,0.8c2.9,0,5.7-1.6,6.8-4.4l15.3-31.2l14.6,31.4C66.1,129.7,68.7,131.3,71.6,131.3z"></path> <circle style="fill: #fff;" cx="50.3" cy="14.6" r="14.6"></circle></svg>
+                    <span class="blind">Accessibility Adjustments</span>
+                </button>
+            </div>
+        </footer>
+
+    </div>
+    
+</body>
+</html>

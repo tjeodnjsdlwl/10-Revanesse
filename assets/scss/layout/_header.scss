@@ -1,0 +1,338 @@
+.header{
+    width: 100%;
+    position: fixed;
+    padding: 55px 0px;
+    background: linear-gradient(0deg, rgba(12, 12, 12, 0), rgba(12, 12, 12, 1));
+    transition: all 0.8s;
+    z-index: 1000;
+
+    @include tablet{
+        padding: 40px 0;
+    }
+
+    @include mobile{
+        padding: 40px 20px;
+    }
+
+    &.on{
+        transform: translate(0%, -100%);
+    }
+
+    .header-wrap{
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+        
+        @include mobile{
+            padding: 0 20px;
+        }
+
+        .logo{
+            flex-shrink: 1;  //수축하기로해야 유동적으로...
+            margin-right: auto;
+         
+            a{
+                display: block;
+                width: 300px;
+                height: 100%;
+
+                @include tablet{
+                    width: 240px;
+                }
+
+                @include mobile{
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+.btn-box{
+    margin-left: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 1;
+
+    @include desktop{
+        display: none;
+    }
+
+    .btn{
+        border: 1px solid #fff;
+        border-radius: 50px;
+        padding: 10px 55px;
+
+        &:hover{
+            transition: all .4s ease-in-out;
+            opacity: 0.7;
+        }
+
+        span{
+            font-size: 14px;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+.gnb{
+    // width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+
+    @include desktop{
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+        gap: 22px;
+    }
+}
+
+
+.header .btn-menu{
+    display: none;
+
+    @include desktop{
+        display: block;
+        width: 30px; height: 30px;
+    }
+
+    @include tablet{
+        display: block;
+        width: 30px; height: 30px;
+    }
+
+    @include mobile{
+        display: block;
+        width: 20px; height: 20px;
+    }
+
+    &.on{
+        @include desktop{
+            display: none;
+        }
+        
+        @include tablet{
+            display: none;
+        }
+    
+        @include mobile{
+            display: none;
+        }
+    }
+
+    .ic{
+        @include desktop{
+            &.menu{
+                opacity: 1;
+                visibility: visible;
+
+                &.on{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+            &.close{
+                opacity: 0;
+                visibility: hidden;
+
+                &.on{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        
+    }
+}
+
+.header .btn-close{
+            display: block;
+            width: 24px; height: 24px;
+            opacity: 1;
+            visibility: visible;
+            position: absolute;
+            top: 52px;
+            right: 50px;
+            
+            &.on{
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            @include tablet{
+                top: 38px;
+                width: 18px; height: 18px;
+            }
+
+            @include mobile{
+                width: 18px; height: 18px;
+            }
+        }
+
+
+
+
+.aside-menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    background: #000;
+    color: #ffffff;
+    z-index: 900;
+    font-family: ivypresto-display, serif;
+    transition: all 0.5s ease;
+
+    &.on{
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .menu-wrapper{
+        position: relative;
+        padding: 160px 5% 5% 5%;
+        display: block;
+        width: 100%;
+        height: 100vh;
+
+        .cate-list{
+            counter-reset: count;
+    
+            .cate-item{
+                font-style: normal;
+                font-weight: 100;
+                font-size: 34px;
+                line-height: 44px;
+                margin-bottom: 10%;
+                padding: 0px 25px;
+                position: relative;
+                margin-left: 15%;
+                display: block;
+    
+                &:nth-child(even){
+                    margin-left: 0;
+                }
+    
+                &::before{
+                    counter-increment: count 1;
+                    content: "0" counter(count);
+                    position: absolute;
+                    color: #ffffff;
+                    width: 24px;
+                    height: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    top: 13px;
+                    left: 0px;
+                }
+    
+                a{
+                    transition: all .2s ease-in-out;
+    
+                    &:hover{
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    
+
+        .btn-box{
+            padding: 0px 15px;
+            display: block;
+            position: absolute;
+            bottom: 20vh;
+            left: 0;
+            right: 0;
+            margin-left: 0;
+
+            .btn{
+                border: 0.5px solid #ffffff;
+                border-radius: 50px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                padding: 15px 24px;
+                height: 50px;
+                display: block;
+                width: 100%;
+                max-width: 350px;
+                margin: 0 auto;
+                position: relative;
+
+                span{
+                    color: #fff;
+                    font-size: 18px;
+
+
+                    &::after{
+                        content: '';
+                        background-image: url(../img/ic-arrow.png);
+                        width: 25px;
+                        height: 12px;
+                        display: inline-block;
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+        
+
+        .link-icon{
+            position: absolute;
+            bottom: 12vh;
+            left: 25px;
+
+            a{
+                margin-right: 10px;
+                
+                &::before{
+                    font-family: "Font Awesome 5 Brands";
+                    width: 14px;
+                    height: 16px;
+                    font-size: 16px;
+                    line-height: 32px;
+                    transition: color .3s;
+                }
+
+                &.insta::before{ content: "\f16d"; }
+                &.facebook::before{ content: "\f39e"; }
+                &.linkedin::before{ content: "\f0e1"; }
+                &.twitter::before{ content: "\f099"; }
+            }
+        }
+
+        // .btn-close{
+        //     display: block;
+        //     width: 24px; height: 24px;
+        //     opacity: 1;
+        //     visibility: visible;
+        //     position: absolute;
+        //     top: 35px;
+        //     right: 50px;
+            
+
+        //     &.on{
+        //         opacity: 0;
+        //         visibility: hidden;
+        //     }
+        // }
+    }
+}

@@ -1,0 +1,213 @@
+
+.footer{
+    margin-top: 40px;
+    border-top: 0.5px solid #333;
+
+    a{
+        transition: opacity 0.4s ease-in-out;
+
+        @include tablet{
+            text-align: center;
+        }
+
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+
+    .footer-wrap{
+        padding: 50px 40px;
+        display: flex;
+        justify-content: space-between;
+
+        @include desktop{
+            padding: 50px 40px;
+        }
+
+        @include tablet{
+            flex-direction: column;
+        }
+
+        .group-company{
+            width: 29.6667%;
+
+            @include tablet{
+                width: 100%;
+                text-align: center;
+            }
+
+            .logo{
+                background: url(../img/logo.png) no-repeat center / cover;
+                display: block;
+                width: 300px;
+                height: 20px;
+                margin-bottom: 9.27%;
+
+                @include desktop{
+                    width: 250px;
+                    height: 16px;
+                }
+
+                @include tablet{
+                    font-size: 36px;
+                    margin: 0 auto;
+                }
+
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+
+            .sns-area .sns{
+                margin-right: 6px;
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                height: 32px;
+                width: 32px;
+
+                @include tablet{
+                    margin-top: 20px;
+                }
+
+                &::before{
+                    font-family: "Font Awesome 5 Brands";
+                    width: 14px;
+                    height: 16px;
+                    font-size: 16px;
+                    line-height: 32px;
+                    transition: color .3s;
+                }
+
+                &.insta::before{ content: "\f16d"; }
+                &.facebook::before{ content: "\f39e"; }
+                &.linkedin::before{ content: "\f0e1"; }
+                &.twitter::before{ content: "\f099"; }
+            }
+        }
+
+        .group-gnb{
+            display: flex;
+            width: 29.6667%;
+
+            @include tablet{
+                width: 100%;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+            }
+
+            .nav-list{
+                display: flex;
+                flex-direction: column;
+
+                .nav-item{
+                    width: 190px;
+                    padding-bottom: 24px;
+                    font-style: normal;
+                    font-weight: 450;
+                    font-size: 14px;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+
+                    @include desktop{
+                        width: 160px;
+                        font-size: 13px;
+                    }
+
+                    @include tablet{
+                        width: 100%;
+                        padding-bottom: 8px;
+                    }
+
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .group-provider{
+            width: 29.6667%;
+            text-align: right;
+
+            @include tablet{
+                width: 100%;
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            .text{
+                font-size: 24px;
+                letter-spacing: 0.02em;
+                line-height: 36px;
+                text-align: right;
+
+                @include desktop{
+                    font-size: 22px;
+                }
+
+                @include tablet{
+                    text-align: center;
+                }
+
+                .lower{
+                    display: inline-block;
+                }
+            }
+
+            .btn-area{
+                position: relative;
+                width: 200px;
+                display: inline-block;
+                margin-top: 40px;
+                padding: 2px 24px;
+                border: 2px solid;
+                border-radius: 50px;
+                border-width: 0.5px;
+                text-align-last: left;
+
+                @include tablet{
+                    margin-top: 25px;
+                }
+
+                .text{
+                    font-size: 14px;
+                    font-family: futura-pt, Helvetica, Arial, Lucida, sans-serif;
+
+                    &::after{
+                        position: absolute;
+                        right: 1.5em;
+                        content: '$';
+                        font-family: ETmodules;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .copy{
+        font-size: 13px;
+        color: #959595;
+        padding: 50px 40px;
+
+        @include desktop{
+            padding: 30px 40px;
+        }
+
+        @include tablet{
+            text-align: center;
+            padding: 0 0 30px 0;
+        }
+
+        @include mobile{
+            font-size: 11px;
+        }
+    }
+}
